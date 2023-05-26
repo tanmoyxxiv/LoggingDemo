@@ -86,7 +86,9 @@ namespace LoggingDemo.Controllers
             [JsonPropertyName("data")]
             public T Data { get; set; }
             [JsonPropertyName("errorMessage")]
-            public string ErrorMessage  { get; set; }   
+            public string ErrorMessage  { get; set; }
+            [JsonPropertyName("summary")]
+            public T Summary { get; set; }
         }
     }
 }
